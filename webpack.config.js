@@ -9,7 +9,7 @@ module.exports = {
  },
   // webpack 5 comes with devServer which loads in development mode
  devServer: {
-   port: 3000,
+   port: 4000,
    static: true
  },
   // Rules of how webpack will take our files, complie & bundle them for the browser 
@@ -29,4 +29,9 @@ module.exports = {
    ]
  },
  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+ resolve: {
+   alias: {
+        '@mui/styled-engine': '@mui/styled-engine-sc'
+      },
+   },
 }
