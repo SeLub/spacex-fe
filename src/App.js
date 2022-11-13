@@ -1,10 +1,14 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavbarComponent from "./components/Navbar"
+import { Container } from 'react-bootstrap'
 
 function App() {
-    return (<div>
-        <h2>Welcome to React App</h2>
-        <h3>Date : {new Date().toDateString()}</h3>
-    </div>)
+    return (
+        <Container>
+            <NavbarComponent></NavbarComponent>
+        </Container>
+)
 }
 
 export default App
